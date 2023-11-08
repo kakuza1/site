@@ -17,16 +17,11 @@ body {
     justify-content: center;
 }
 
-.logo_img {
-    width: 4%;
-    background: url(./images/logo.svg) left 3px no-repeat;
-}
-
 main {
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     flex-direction: column;
     gap: 40px 0px;
     max-width: 1200px;
@@ -82,11 +77,16 @@ hr {
     margin: 5px 0 5px 0;
 }
 
+.main_text_wrapper {
+    margin-top: 50px;
+}
+
 .logo_wrapper {
     display: flex;
     flex-direction: column;
-    background: url(./images/logo.svg) -3px 1px no-repeat;
+    background: url(./images/logo4.svg) 10px -10px no-repeat;
     padding-left: 66px;
+    background-size: 70px;
 }
 
 h1 {
@@ -147,8 +147,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 122px;
-    height: 20px;
+    width: 150px;
+    height: 22px;
     border-radius: 10px;
     font-size: 20px;
     white-space: nowrap;
