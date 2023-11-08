@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
         <div class="logo_wrapper">
-            <p class="logo_text"> Тепло Надежно <br> Выгодно<hr></p>
+            <p class="logo_text"> Тепло Надежно <br> Выгодно</p><hr><p></p>
             <p class="logo_text">ТНВ</p>
         </div>
-        <a href="/" class="link">Главная</a>
-        <a href="" class="link">Цены</a>
-        <a href="#phone" class="link"   id="changePhone">Контакты</a>    <!--будет якорь на конец сайта-->
+        <a href="http://127.0.0.1:5500/" class="link">Главная</a>
+        <a href="http://127.0.0.1:5500/" class="link">Цены</a>
+        <a href="http://127.0.0.1:5500/#phone" class="link" id="changePhone">Контакты</a>    <!--будет якорь на конец сайта-->
     </header>
 
     <main class="main">
-        <p class="main_text">Мы работаем с</p>
-        <div class="image_text">
+        <!-- <div class="image_text">
             <h1>Деревянными</h1>
             <h1>Алюминиевыми</h1>
             <h1>Пластиковыми</h1>
-        </div>
+        </div> -->
         <div class="image_wrapper">
+            <p class="xyi">Деревянные</p>
             <img src="./images/1.jpg" alt="деревянное окно">
+            <p class="xyi">Алюминиевые</p>
             <img src="./images/2.jpg" alt="алюминиевое окно">
+            <p class="xyi">Пластиковые</p>
             <img src="./images/3.jpg" alt="пластиковое окно">
         </div>
-        <p class="main_text">Виды работ</p>
         <div class="work_list">
             <ul id="1">
                 <li>Замена уплотнителя</li>
@@ -64,7 +63,7 @@
     </main>
     <footer class="footer header">
         <div class="logo_wrapper">
-            <p class="logo_text"> Тепло Надежно <br> Выгодно<hr></p>
+            <p class="logo_text"> Тепло Надежно <br> Выгодно</p><hr><p></p>
             <p class="logo_text">ТНВ</p>
         </div>
         <a id="phone" class="tel" href="tel:+79952331719">+7(995)233-17-19</a>
@@ -73,6 +72,44 @@
             <p>С 09:00 до 22:00</p>
         </div>
     </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+    <script src="./Document_files/script.js.Без названия"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
